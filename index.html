@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INKOGNITO - Printing Service Company</title>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -22,17 +23,24 @@
             }
         }
     </script>
+
     <!-- Google Fonts Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- PyScript: Python runs in the browser -->
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css">
     <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
     </style>
 </head>
+
 <body class="bg-white text-primary antialiased">
 
     <!-- Notification Toast -->
@@ -44,6 +52,7 @@
     <!-- 1. Header / Navigation -->
     <header class="sticky top-0 z-40 bg-white border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+
             <!-- Logo -->
             <a href="#home" class="flex items-center gap-3 group">
                 <div class="relative bg-gray-50 border border-gray-200 px-3 py-1.5 rounded-md flex flex-col items-center justify-center shadow-inner">
@@ -66,20 +75,27 @@
                 <a href="#contact" class="hover:text-secondary transition-colors">Contact Us</a>
             </nav>
 
-            <!-- CTA Button -->
+            <!-- Desktop CTA Button -->
             <div class="hidden md:flex items-center">
-                <button data-modal="Get Started"" class="bg-primary hover:bg-secondary text-white px-7 py-3 rounded-xl text-sm font-bold transition-all shadow-lg hover:shadow-xl">
+                <button data-modal="Get Started" class="bg-primary hover:bg-secondary text-white px-7 py-3 rounded-xl text-sm font-bold transition-all shadow-lg hover:shadow-xl">
                     Get Started
                 </button>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="md:hidden text-primary text-2xl focus:outline-none">
+            <!-- Member 4: Mobile Menu Button -->
+            <button
+                id="mobile-menu-btn"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                class="md:hidden text-primary text-2xl focus:outline-none"
+            >
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu -->
+        <!-- Member 4: Mobile Navigation Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3 text-sm shadow-lg">
             <a href="#home" class="block text-primary font-medium hover:text-secondary">Home</a>
             <a href="#about" class="block text-primary font-medium hover:text-secondary">About Us</a>
@@ -87,7 +103,10 @@
             <a href="#projects" class="block text-primary font-medium hover:text-secondary">Projects</a>
             <a href="#pricing" class="block text-primary font-medium hover:text-secondary">Pricing</a>
             <a href="#contact" class="block text-primary font-medium hover:text-secondary">Contact Us</a>
-            <button data-modal="Get Started"" class="w-full bg-primary text-white py-3 rounded-xl font-bold shadow">Get Started</button>
+
+            <button data-modal="Get Started" class="w-full bg-primary text-white py-3 rounded-xl font-bold shadow">
+                Get Started
+            </button>
         </div>
     </header>
 
@@ -95,9 +114,10 @@
     <section id="home" class="py-10 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-6 items-stretch">
-                
-                <!-- Left Hero Card (Light Purple Background #E2E2FE) -->
+
+                <!-- Left Hero Card -->
                 <div class="lg:col-span-7 bg-lightpurple rounded-3xl p-8 sm:p-12 relative overflow-hidden flex flex-col justify-between shadow-sm">
+
                     <!-- Dot Matrix Decoration -->
                     <div class="grid grid-cols-4 gap-1.5 w-10 opacity-40 mb-6">
                         <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
@@ -118,32 +138,37 @@
                         <span class="text-xs font-bold uppercase tracking-widest text-secondary block">
                             PRINTING SERVICE COMPANY
                         </span>
+
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-primary tracking-tight leading-none">
                             Show Up, Stand Out!
                         </h1>
+
                         <h2 class="text-lg sm:text-xl font-bold text-secondary">
                             Bring Your Ideas to Life with High-Quality Prints
                         </h2>
+
                         <p class="text-xs sm:text-sm text-gray-600 leading-relaxed pt-2">
                             Elementum consectetur at aliquet turpis ultricies felis egestas aliquam porta. Amet vitae.
                         </p>
-                        
+
                         <div class="flex flex-wrap gap-4 pt-4">
-                            <button data-modal="Get Started"" class="bg-primary hover:bg-secondary text-white px-8 py-3.5 rounded-xl text-sm font-bold shadow-md transition-all">
+                            <button data-modal="Get Started" class="bg-primary hover:bg-secondary text-white px-8 py-3.5 rounded-xl text-sm font-bold shadow-md transition-all">
                                 Get Started
                             </button>
+
                             <a href="#services" class="bg-white hover:bg-gray-50 text-primary border border-gray-300 px-8 py-3.5 rounded-xl text-sm font-bold shadow-sm transition-all inline-block text-center">
                                 Read More
                             </a>
                         </div>
                     </div>
 
-                    <!-- Bottom Right Decorative Organic Curve Shape -->
+                    <!-- Decorative Curve -->
                     <div class="absolute -bottom-16 -right-16 w-56 h-56 bg-gray-200/60 rounded-full blur-2xl pointer-events-none"></div>
                 </div>
 
-                <!-- Middle/Right Column (Dark Cards matching reference) -->
+                <!-- Middle/Right Column -->
                 <div class="lg:col-span-5 grid grid-rows-2 gap-6">
+
                     <!-- Top Dark Card -->
                     <div class="bg-secondary rounded-3xl p-6 relative overflow-hidden flex flex-col justify-end shadow-md min-h-[180px]">
                         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
@@ -164,15 +189,15 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- 3. Key Features / Perks bar -->
+    <!-- 3. Key Features / Perks Bar -->
     <section class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
                 <!-- Card 1 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
                     <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner">
@@ -183,6 +208,7 @@
                         <p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p>
                     </div>
                 </div>
+
                 <!-- Card 2 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
                     <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner">
@@ -193,6 +219,7 @@
                         <p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p>
                     </div>
                 </div>
+
                 <!-- Card 3 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
                     <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner">
@@ -203,6 +230,7 @@
                         <p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p>
                     </div>
                 </div>
+
                 <!-- Card 4 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
                     <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner">
@@ -213,6 +241,7 @@
                         <p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -221,29 +250,34 @@
     <section id="projects" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-8">
+
                 <!-- Popular in 2023 Card -->
                 <div class="bg-lightpurple/30 border border-lightpurple rounded-3xl p-8 relative overflow-hidden shadow-sm">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-gray-200/50 rounded-full blur-2xl pointer-events-none"></div>
+
                     <div class="relative z-10 space-y-6">
                         <div>
                             <h3 class="text-xl font-black text-primary">Popular in 2023</h3>
                             <p class="text-xs text-gray-600 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis ultricies felis egestas aliquam porta. Amet vitae.</p>
                         </div>
-                        
+
                         <div class="grid sm:grid-cols-12 gap-6 items-center">
                             <div class="sm:col-span-5 bg-secondary rounded-2xl h-36 flex items-center justify-center shadow">
                                 <span class="text-xs font-bold text-white tracking-wider">PREVIEW</span>
                             </div>
+
                             <div class="sm:col-span-7 space-y-3">
-                                <div data-modal="Tote Bags"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
+                                <div data-modal="Tote Bags" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
                                     <span class="font-bold text-primary text-sm">Tote Bags</span>
                                     <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
                                 </div>
-                                <div data-modal="Business Cards"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
+
+                                <div data-modal="Business Cards" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
                                     <span class="font-bold text-primary text-sm">Business Cards</span>
                                     <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
                                 </div>
-                                <div data-modal="T-shirts"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
+
+                                <div data-modal="T-shirts" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
                                     <span class="font-bold text-primary text-sm">T-shirts</span>
                                     <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
                                 </div>
@@ -255,26 +289,30 @@
                 <!-- Top Rated by Customers Card -->
                 <div class="bg-lightpurple/30 border border-lightpurple rounded-3xl p-8 relative overflow-hidden shadow-sm">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-gray-200/50 rounded-full blur-2xl pointer-events-none"></div>
+
                     <div class="relative z-10 space-y-6">
                         <div>
                             <h3 class="text-xl font-black text-primary">Top Rated by Customers</h3>
                             <p class="text-xs text-gray-600 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis ultricies felis egestas aliquam porta. Amet vitae.</p>
                         </div>
-                        
+
                         <div class="grid sm:grid-cols-12 gap-6 items-center">
                             <div class="sm:col-span-5 bg-secondary rounded-2xl h-36 flex items-center justify-center shadow">
                                 <span class="text-xs font-bold text-white tracking-wider">PREVIEW</span>
                             </div>
+
                             <div class="sm:col-span-7 space-y-3">
-                                <div data-modal="Brochures"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
+                                <div data-modal="Brochures" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
                                     <span class="font-bold text-primary text-sm">Brochures</span>
                                     <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
                                 </div>
-                                <div data-modal="Photo Books"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
+
+                                <div data-modal="Photo Books" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
                                     <span class="font-bold text-primary text-sm">Photo Books</span>
                                     <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
                                 </div>
-                                <div data-modal="Mouse Pads"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
+
+                                <div data-modal="Mouse Pads" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
                                     <span class="font-bold text-primary text-sm">Mouse Pads</span>
                                     <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
                                 </div>
@@ -282,6 +320,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -289,14 +328,16 @@
     <!-- 5. About Us Section -->
     <section id="about" class="py-16 bg-gray-50/50 border-t border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
             <div class="grid lg:grid-cols-12 gap-8 items-end mb-12">
                 <div class="lg:col-span-7 space-y-3">
                     <span class="text-xs font-bold uppercase tracking-wider text-secondary">ABOUT US</span>
                     <h2 class="text-3xl sm:text-4xl font-black text-primary leading-tight">Your Trusted Partner for Superior Printing Services</h2>
                 </div>
+
                 <div class="lg:col-span-5 flex flex-col items-start lg:items-end justify-center space-y-3">
                     <p class="text-xs text-gray-500 text-left lg:text-right max-w-sm">Imperdiet turpis ut quis quis scelerisque ullamcorper eu tellus.</p>
-                    <button data-modal="About Us"" class="bg-primary hover:bg-secondary text-white px-7 py-3 rounded-xl text-xs font-bold shadow transition-all">
+                    <button data-modal="About Us" class="bg-primary hover:bg-secondary text-white px-7 py-3 rounded-xl text-xs font-bold shadow transition-all">
                         Learn More
                     </button>
                 </div>
@@ -304,6 +345,7 @@
 
             <!-- Three Feature Cards -->
             <div class="grid md:grid-cols-3 gap-6">
+
                 <!-- Card 1 -->
                 <div class="bg-white p-6 rounded-3xl border border-gray-200/80 shadow-sm space-y-4">
                     <div class="bg-secondary rounded-2xl h-56 w-full flex items-center justify-center shadow-inner">
@@ -312,7 +354,7 @@
                     <h3 class="font-bold text-primary text-base">High-Quality Printing</h3>
                     <p class="text-xs text-gray-500 leading-relaxed">Imperdiet turpis ut quis quis scelerisque ullamcorper eu tellus.</p>
                     <div>
-                        <button data-modal="High-Quality Printing"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-1.5">
+                        <button data-modal="High-Quality Printing" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-1.5">
                             Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </button>
                     </div>
@@ -326,7 +368,7 @@
                     <h3 class="font-bold text-primary text-base">Customization Options</h3>
                     <p class="text-xs text-gray-500 leading-relaxed">Imperdiet turpis ut quis quis scelerisque ullamcorper eu tellus.</p>
                     <div>
-                        <button data-modal="Customization Options"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-1.5">
+                        <button data-modal="Customization Options" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-1.5">
                             Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </button>
                     </div>
@@ -340,11 +382,12 @@
                     <h3 class="font-bold text-primary text-base">Quick Turnaround Time</h3>
                     <p class="text-xs text-gray-500 leading-relaxed">Imperdiet turpis ut quis quis scelerisque ullamcorper eu tellus.</p>
                     <div>
-                        <button data-modal="Quick Turnaround Time"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-1.5">
+                        <button data-modal="Quick Turnaround Time" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-1.5">
                             Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </button>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -352,6 +395,7 @@
     <!-- 6. Our Services Section -->
     <section id="services" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-xs font-bold uppercase tracking-wider text-secondary">OUR SERVICES</span>
                 <h2 class="text-3xl sm:text-4xl font-black text-primary mt-1">Printing Solutions for All Your Needs</h2>
@@ -360,6 +404,7 @@
 
             <!-- Services Grid -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
                 <!-- 1: Digital Print -->
                 <div class="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
                     <div class="space-y-6">
@@ -372,7 +417,7 @@
                         </div>
                     </div>
                     <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Digital Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
+                        <button data-modal="Digital Print" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
                             Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </button>
                     </div>
@@ -390,7 +435,7 @@
                         </div>
                     </div>
                     <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Shirt Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
+                        <button data-modal="Shirt Print" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
                             Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </button>
                     </div>
@@ -408,7 +453,7 @@
                         </div>
                     </div>
                     <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Photo Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
+                        <button data-modal="Photo Print" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
                             Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </button>
                     </div>
@@ -426,7 +471,7 @@
                         </div>
                     </div>
                     <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Stationery Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
+                        <button data-modal="Stationery Print" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
                             Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </button>
                     </div>
@@ -444,7 +489,7 @@
                         </div>
                     </div>
                     <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Document Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
+                        <button data-modal="Document Print" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
                             Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </button>
                     </div>
@@ -462,16 +507,17 @@
                         </div>
                     </div>
                     <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Packaging Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
+                        <button data-modal="Packaging Print" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
                             Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </button>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- 7. Statistics Banner (Dark background #212131) -->
+    <!-- 7. Statistics Banner -->
     <section class="bg-primary text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -499,7 +545,7 @@
     <section id="pricing" class="py-20 bg-lightpurple/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
+
                 <!-- Left Info & Items -->
                 <div class="lg:col-span-7 space-y-8">
                     <div>
@@ -546,10 +592,10 @@
                     </div>
                 </div>
 
-                <!-- Right "Our Process" Card -->
+                <!-- Right Our Process Card -->
                 <div class="lg:col-span-5 bg-white p-6 rounded-3xl border border-gray-200/80 shadow-md">
                     <div class="bg-gray-100 rounded-2xl h-96 relative overflow-hidden flex flex-col justify-between p-6">
-                        <!-- Play Button Header -->
+
                         <div class="flex items-center gap-3 bg-white/90 backdrop-blur px-4 py-2 rounded-full w-fit shadow-sm">
                             <div class="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-[10px]">
                                 <i class="fa-solid fa-play ml-0.5"></i>
@@ -557,11 +603,11 @@
                             <span class="font-bold text-primary text-xs">Our Process</span>
                         </div>
 
-                        <!-- Inner Dark Graphic Box -->
                         <div class="bg-secondary rounded-2xl flex-1 mt-6 flex items-center justify-center relative overflow-hidden shadow-inner">
                             <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
                             <span class="text-xs font-bold text-white tracking-widest relative z-10">VIDEO OVERVIEW</span>
                         </div>
+
                     </div>
                 </div>
 
@@ -573,14 +619,14 @@
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Testimonial Card with Rating -->
+
+                <!-- Left Testimonial Card -->
                 <div class="lg:col-span-5 bg-white p-6 rounded-3xl border border-gray-200/80 shadow-md">
                     <div class="bg-gray-100 rounded-2xl h-96 relative overflow-hidden flex flex-col justify-end p-6">
                         <div class="absolute inset-0 bg-secondary/80 flex items-center justify-center">
                             <span class="text-xs font-bold text-white tracking-widest">CLIENT PREVIEW</span>
                         </div>
-                        <!-- Rating Badge on top -->
+
                         <div class="relative z-10 bg-white/95 backdrop-blur px-5 py-3 rounded-2xl shadow-lg flex items-center justify-between">
                             <div class="flex items-center gap-2">
                                 <span class="text-amber-500 text-sm">★★★★★</span>
@@ -591,7 +637,7 @@
                     </div>
                 </div>
 
-                <!-- Right Testimonial Text & Carousel -->
+                <!-- Right Testimonial Text -->
                 <div class="lg:col-span-7 space-y-6">
                     <div class="flex items-center justify-between">
                         <h2 class="text-3xl sm:text-4xl font-black text-primary">Testimonial</h2>
@@ -622,15 +668,16 @@
         </div>
     </section>
 
-    <!-- 10. Newsletter Section (Dark background #212131) -->
+    <!-- 10. Newsletter Section -->
     <section class="bg-primary text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-6">
                     <h3 class="text-2xl sm:text-3xl font-black tracking-tight">Join Our Newsletter to Keep Up To Date With Us!</h3>
                 </div>
+
                 <div class="lg:col-span-6">
-                    <form  class="flex flex-col sm:flex-row gap-3">
+                    <form class="flex flex-col sm:flex-row gap-3">
                         <input type="email" id="newsletter-email" required placeholder="Enter your Email" class="flex-1 bg-white/10 border border-white/20 rounded-xl px-5 py-3.5 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-lightpurple">
                         <button type="submit" class="bg-white hover:bg-lightpurple text-primary px-8 py-3.5 rounded-xl text-sm font-bold transition-all shadow">
                             Subscribe
@@ -644,7 +691,9 @@
     <!-- 11. Footer Section -->
     <footer id="contact" class="bg-primary text-gray-300 py-16 text-xs border-t border-secondary">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+
                 <!-- Col 1: Logo & Description -->
                 <div class="space-y-4 md:col-span-1">
                     <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/10 w-fit">
@@ -688,6 +737,7 @@
                         <li><a href="#" class="hover:text-lightpurple transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>
+
             </div>
 
             <!-- Bottom Divider & Copyright -->
@@ -695,6 +745,7 @@
                 <div>© 2026 INKognito. All rights reserved.</div>
                 <div>Designed by TokoTema</div>
             </div>
+
         </div>
     </footer>
 
@@ -703,10 +754,14 @@
         <div class="bg-white rounded-3xl p-8 max-w-sm w-full m-4 shadow-2xl space-y-4 border border-gray-200">
             <h3 id="modal-title" class="font-bold text-primary text-xl">Action</h3>
             <p class="text-xs text-gray-600 leading-relaxed">Configure your print requirements, upload your artwork file, or request a custom quotation.</p>
-            <button data-action="close-modal" class="w-full bg-primary text-white py-3 rounded-xl text-xs font-bold hover:bg-secondary transition-all">Close</button>
+            <button data-action="close-modal" class="w-full bg-primary text-white py-3 rounded-xl text-xs font-bold hover:bg-secondary transition-all">
+                Close
+            </button>
         </div>
     </div>
+
     <!-- Python functionality lives in main.py -->
     <script type="py" src="./main.py"></script>
+
 </body>
 </html>
