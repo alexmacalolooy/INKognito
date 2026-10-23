@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INKOGNITO - Printing Service Company</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,11 +22,8 @@
             }
         }
     </script>
-    <!-- Google Fonts Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- PyScript: Python runs in the browser -->
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css">
     <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
     <style>
@@ -41,10 +38,9 @@
         <span id="toast-message">Success message here</span>
     </div>
 
-    <!-- 1. Header / Navigation -->
+    <!-- MACARAYA CONTRIBUTION: 1. Header / Navigation -->
     <header class="sticky top-0 z-40 bg-white border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
-            <!-- Logo -->
             <a href="#home" class="flex items-center gap-3 group">
                 <div class="relative bg-gray-50 border border-gray-200 px-3 py-1.5 rounded-md flex flex-col items-center justify-center shadow-inner">
                     <span class="text-xs font-black tracking-widest text-primary">ING</span>
@@ -56,7 +52,6 @@
                 </div>
             </a>
 
-            <!-- Desktop Nav Links -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-primary">
                 <a href="#home" class="hover:text-secondary transition-colors font-semibold">Home</a>
                 <a href="#about" class="hover:text-secondary transition-colors">About Us</a>
@@ -66,20 +61,17 @@
                 <a href="#contact" class="hover:text-secondary transition-colors">Contact Us</a>
             </nav>
 
-            <!-- CTA Button -->
             <div class="hidden md:flex items-center">
-                <button data-modal="Get Started"" class="bg-primary hover:bg-secondary text-white px-7 py-3 rounded-xl text-sm font-bold transition-all shadow-lg hover:shadow-xl">
+                <button data-modal="Get Started" class="bg-primary hover:bg-secondary text-white px-7 py-3 rounded-xl text-sm font-bold transition-all shadow-lg hover:shadow-xl">
                     Get Started
                 </button>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="md:hidden text-primary text-2xl focus:outline-none">
+            <button id="mobile-menu-btn" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-primary text-2xl focus:outline-none">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3 text-sm shadow-lg">
             <a href="#home" class="block text-primary font-medium hover:text-secondary">Home</a>
             <a href="#about" class="block text-primary font-medium hover:text-secondary">About Us</a>
@@ -87,18 +79,15 @@
             <a href="#projects" class="block text-primary font-medium hover:text-secondary">Projects</a>
             <a href="#pricing" class="block text-primary font-medium hover:text-secondary">Pricing</a>
             <a href="#contact" class="block text-primary font-medium hover:text-secondary">Contact Us</a>
-            <button data-modal="Get Started"" class="w-full bg-primary text-white py-3 rounded-xl font-bold shadow">Get Started</button>
+            <button data-modal="Get Started" class="w-full bg-primary text-white py-3 rounded-xl font-bold shadow">Get Started</button>
         </div>
     </header>
 
-    <!-- 2. Hero Section -->
+    <!-- MACARAYA CONTRIBUTION: 2. Hero / Home Section -->
     <section id="home" class="py-10 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-6 items-stretch">
-                
-                <!-- Left Hero Card (Light Purple Background #E2E2FE) -->
                 <div class="lg:col-span-7 bg-lightpurple rounded-3xl p-8 sm:p-12 relative overflow-hidden flex flex-col justify-between shadow-sm">
-                    <!-- Dot Matrix Decoration -->
                     <div class="grid grid-cols-4 gap-1.5 w-10 opacity-40 mb-6">
                         <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
                         <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
@@ -115,113 +104,64 @@
                     </div>
 
                     <div class="space-y-4 z-10 max-w-xl">
-                        <span class="text-xs font-bold uppercase tracking-widest text-secondary block">
-                            PRINTING SERVICE COMPANY
-                        </span>
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-primary tracking-tight leading-none">
-                            Show Up, Stand Out!
-                        </h1>
-                        <h2 class="text-lg sm:text-xl font-bold text-secondary">
-                            Bring Your Ideas to Life with High-Quality Prints
-                        </h2>
-                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed pt-2">
-                            Elementum consectetur at aliquet turpis ultricies felis egestas aliquam porta. Amet vitae.
-                        </p>
-                        
+                        <span class="text-xs font-bold uppercase tracking-widest text-secondary block">PRINTING SERVICE COMPANY</span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-primary tracking-tight leading-none">Show Up, Stand Out!</h1>
+                        <h2 class="text-lg sm:text-xl font-bold text-secondary">Bring Your Ideas to Life with High-Quality Prints</h2>
+                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed pt-2">Elementum consectetur at aliquet turpis ultricies felis egestas aliquam porta. Amet vitae.</p>
                         <div class="flex flex-wrap gap-4 pt-4">
-                            <button data-modal="Get Started"" class="bg-primary hover:bg-secondary text-white px-8 py-3.5 rounded-xl text-sm font-bold shadow-md transition-all">
-                                Get Started
-                            </button>
-                            <a href="#services" class="bg-white hover:bg-gray-50 text-primary border border-gray-300 px-8 py-3.5 rounded-xl text-sm font-bold shadow-sm transition-all inline-block text-center">
-                                Read More
-                            </a>
+                            <button data-modal="Get Started" class="bg-primary hover:bg-secondary text-white px-8 py-3.5 rounded-xl text-sm font-bold shadow-md transition-all">Get Started</button>
+                            <a href="#services" class="bg-white hover:bg-gray-50 text-primary border border-gray-300 px-8 py-3.5 rounded-xl text-sm font-bold shadow-sm transition-all inline-block text-center">Read More</a>
                         </div>
                     </div>
-
-                    <!-- Bottom Right Decorative Organic Curve Shape -->
                     <div class="absolute -bottom-16 -right-16 w-56 h-56 bg-gray-200/60 rounded-full blur-2xl pointer-events-none"></div>
                 </div>
 
-                <!-- Middle/Right Column (Dark Cards matching reference) -->
                 <div class="lg:col-span-5 grid grid-rows-2 gap-6">
-                    <!-- Top Dark Card -->
                     <div class="bg-secondary rounded-3xl p-6 relative overflow-hidden flex flex-col justify-end shadow-md min-h-[180px]">
                         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
                         <div class="relative z-10 flex justify-end">
-                            <span class="bg-white text-primary px-5 py-2 rounded-full text-xs font-bold shadow">
-                                PRINT ON DEMAND
-                            </span>
+                            <span class="bg-white text-primary px-5 py-2 rounded-full text-xs font-bold shadow">PRINT ON DEMAND</span>
                         </div>
                     </div>
-
-                    <!-- Bottom Dark Card -->
                     <div class="bg-secondary rounded-3xl p-6 relative overflow-hidden flex flex-col justify-end shadow-md min-h-[180px]">
                         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
                         <div class="relative z-10 flex justify-end">
-                            <span class="bg-white text-primary px-5 py-2 rounded-full text-xs font-bold shadow">
-                                BUSINESS CARD
-                            </span>
+                            <span class="bg-white text-primary px-5 py-2 rounded-full text-xs font-bold shadow">BUSINESS CARD</span>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- 3. Key Features / Perks bar -->
+    <!-- MACARAYA CONTRIBUTION: 3. Key Features -->
     <section class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Card 1 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
-                    <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner">
-                        <i class="fa-solid fa-thumbs-up"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-primary text-base">Best Quality</h3>
-                        <p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p>
-                    </div>
+                    <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner"><i class="fa-solid fa-thumbs-up"></i></div>
+                    <div><h3 class="font-bold text-primary text-base">Best Quality</h3><p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p></div>
                 </div>
-                <!-- Card 2 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
-                    <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-primary text-base">Secure Payment</h3>
-                        <p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p>
-                    </div>
+                    <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div><h3 class="font-bold text-primary text-base">Secure Payment</h3><p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p></div>
                 </div>
-                <!-- Card 3 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
-                    <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner">
-                        <i class="fa-solid fa-user-group"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-primary text-base">Professional</h3>
-                        <p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p>
-                    </div>
+                    <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner"><i class="fa-solid fa-user-group"></i></div>
+                    <div><h3 class="font-bold text-primary text-base">Professional</h3><p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p></div>
                 </div>
-                <!-- Card 4 -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
-                    <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner">
-                        <i class="fa-solid fa-medal"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-primary text-base">Competitive Pricing</h3>
-                        <p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p>
-                    </div>
+                    <div class="w-12 h-12 bg-lightpurple text-primary rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-inner"><i class="fa-solid fa-medal"></i></div>
+                    <div><h3 class="font-bold text-primary text-base">Competitive Pricing</h3><p class="text-xs text-gray-500 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis.</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. Curated Popular / Top Rated Grid -->
+    <!-- 4. Projects Section -->
     <section id="projects" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-8">
-                <!-- Popular in 2023 Card -->
                 <div class="bg-lightpurple/30 border border-lightpurple rounded-3xl p-8 relative overflow-hidden shadow-sm">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-gray-200/50 rounded-full blur-2xl pointer-events-none"></div>
                     <div class="relative z-10 space-y-6">
@@ -229,30 +169,17 @@
                             <h3 class="text-xl font-black text-primary">Popular in 2023</h3>
                             <p class="text-xs text-gray-600 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis ultricies felis egestas aliquam porta. Amet vitae.</p>
                         </div>
-                        
                         <div class="grid sm:grid-cols-12 gap-6 items-center">
-                            <div class="sm:col-span-5 bg-secondary rounded-2xl h-36 flex items-center justify-center shadow">
-                                <span class="text-xs font-bold text-white tracking-wider">PREVIEW</span>
-                            </div>
+                            <div class="sm:col-span-5 bg-secondary rounded-2xl h-36 flex items-center justify-center shadow"><span class="text-xs font-bold text-white tracking-wider">PREVIEW</span></div>
                             <div class="sm:col-span-7 space-y-3">
-                                <div data-modal="Tote Bags"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
-                                    <span class="font-bold text-primary text-sm">Tote Bags</span>
-                                    <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
-                                </div>
-                                <div data-modal="Business Cards"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
-                                    <span class="font-bold text-primary text-sm">Business Cards</span>
-                                    <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
-                                </div>
-                                <div data-modal="T-shirts"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
-                                    <span class="font-bold text-primary text-sm">T-shirts</span>
-                                    <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
-                                </div>
+                                <div data-modal="Tote Bags" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm"><span class="font-bold text-primary text-sm">Tote Bags</span><i class="fa-solid fa-arrow-right text-xs text-gray-400"></i></div>
+                                <div data-modal="Business Cards" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm"><span class="font-bold text-primary text-sm">Business Cards</span><i class="fa-solid fa-arrow-right text-xs text-gray-400"></i></div>
+                                <div data-modal="T-shirts" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm"><span class="font-bold text-primary text-sm">T-shirts</span><i class="fa-solid fa-arrow-right text-xs text-gray-400"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Top Rated by Customers Card -->
                 <div class="bg-lightpurple/30 border border-lightpurple rounded-3xl p-8 relative overflow-hidden shadow-sm">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-gray-200/50 rounded-full blur-2xl pointer-events-none"></div>
                     <div class="relative z-10 space-y-6">
@@ -260,24 +187,12 @@
                             <h3 class="text-xl font-black text-primary">Top Rated by Customers</h3>
                             <p class="text-xs text-gray-600 mt-1 leading-relaxed">Elementum consectetur at aliquet turpis ultricies felis egestas aliquam porta. Amet vitae.</p>
                         </div>
-                        
                         <div class="grid sm:grid-cols-12 gap-6 items-center">
-                            <div class="sm:col-span-5 bg-secondary rounded-2xl h-36 flex items-center justify-center shadow">
-                                <span class="text-xs font-bold text-white tracking-wider">PREVIEW</span>
-                            </div>
+                            <div class="sm:col-span-5 bg-secondary rounded-2xl h-36 flex items-center justify-center shadow"><span class="text-xs font-bold text-white tracking-wider">PREVIEW</span></div>
                             <div class="sm:col-span-7 space-y-3">
-                                <div data-modal="Brochures"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
-                                    <span class="font-bold text-primary text-sm">Brochures</span>
-                                    <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
-                                </div>
-                                <div data-modal="Photo Books"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
-                                    <span class="font-bold text-primary text-sm">Photo Books</span>
-                                    <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
-                                </div>
-                                <div data-modal="Mouse Pads"" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm">
-                                    <span class="font-bold text-primary text-sm">Mouse Pads</span>
-                                    <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
-                                </div>
+                                <div data-modal="Brochures" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm"><span class="font-bold text-primary text-sm">Brochures</span><i class="fa-solid fa-arrow-right text-xs text-gray-400"></i></div>
+                                <div data-modal="Photo Books" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm"><span class="font-bold text-primary text-sm">Photo Books</span><i class="fa-solid fa-arrow-right text-xs text-gray-400"></i></div>
+                                <div data-modal="Mouse Pads" class="bg-white border border-gray-200 rounded-xl p-3.5 flex items-center justify-between cursor-pointer hover:border-primary transition-all shadow-sm"><span class="font-bold text-primary text-sm">Mouse Pads</span><i class="fa-solid fa-arrow-right text-xs text-gray-400"></i></div>
                             </div>
                         </div>
                     </div>
@@ -285,428 +200,3 @@
             </div>
         </div>
     </section>
-
-    <!-- 5. About Us Section -->
-    <section id="about" class="py-16 bg-gray-50/50 border-t border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-8 items-end mb-12">
-                <div class="lg:col-span-7 space-y-3">
-                    <span class="text-xs font-bold uppercase tracking-wider text-secondary">ABOUT US</span>
-                    <h2 class="text-3xl sm:text-4xl font-black text-primary leading-tight">Your Trusted Partner for Superior Printing Services</h2>
-                </div>
-                <div class="lg:col-span-5 flex flex-col items-start lg:items-end justify-center space-y-3">
-                    <p class="text-xs text-gray-500 text-left lg:text-right max-w-sm">Imperdiet turpis ut quis quis scelerisque ullamcorper eu tellus.</p>
-                    <button data-modal="About Us"" class="bg-primary hover:bg-secondary text-white px-7 py-3 rounded-xl text-xs font-bold shadow transition-all">
-                        Learn More
-                    </button>
-                </div>
-            </div>
-
-            <!-- Three Feature Cards -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Card 1 -->
-                <div class="bg-white p-6 rounded-3xl border border-gray-200/80 shadow-sm space-y-4">
-                    <div class="bg-secondary rounded-2xl h-56 w-full flex items-center justify-center shadow-inner">
-                        <span class="text-xs font-bold text-white tracking-widest">PRINTING</span>
-                    </div>
-                    <h3 class="font-bold text-primary text-base">High-Quality Printing</h3>
-                    <p class="text-xs text-gray-500 leading-relaxed">Imperdiet turpis ut quis quis scelerisque ullamcorper eu tellus.</p>
-                    <div>
-                        <button data-modal="High-Quality Printing"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-1.5">
-                            Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-white p-6 rounded-3xl border border-gray-200/80 shadow-sm space-y-4">
-                    <div class="bg-secondary rounded-2xl h-56 w-full flex items-center justify-center shadow-inner">
-                        <span class="text-xs font-bold text-white tracking-widest">CUSTOMIZATION</span>
-                    </div>
-                    <h3 class="font-bold text-primary text-base">Customization Options</h3>
-                    <p class="text-xs text-gray-500 leading-relaxed">Imperdiet turpis ut quis quis scelerisque ullamcorper eu tellus.</p>
-                    <div>
-                        <button data-modal="Customization Options"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-1.5">
-                            Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-white p-6 rounded-3xl border border-gray-200/80 shadow-sm space-y-4">
-                    <div class="bg-secondary rounded-2xl h-56 w-full flex items-center justify-center shadow-inner">
-                        <span class="text-xs font-bold text-white tracking-widest">TURNAROUND</span>
-                    </div>
-                    <h3 class="font-bold text-primary text-base">Quick Turnaround Time</h3>
-                    <p class="text-xs text-gray-500 leading-relaxed">Imperdiet turpis ut quis quis scelerisque ullamcorper eu tellus.</p>
-                    <div>
-                        <button data-modal="Quick Turnaround Time"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-1.5">
-                            Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. Our Services Section -->
-    <section id="services" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-wider text-secondary">OUR SERVICES</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-primary mt-1">Printing Solutions for All Your Needs</h2>
-                <p class="text-xs text-gray-500 mt-2">Netus feugiat vitae enim enim in viverra. Id at sagittis cras pretium dictum nec netus. Ante dolor quis convallis.</p>
-            </div>
-
-            <!-- Services Grid -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 1: Digital Print -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                    <div class="space-y-6">
-                        <div class="w-14 h-14 bg-lightpurple text-primary rounded-2xl flex items-center justify-center text-xl shadow-inner">
-                            <i class="fa-solid fa-print"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-primary text-lg mb-2">Digital Print</h3>
-                            <p class="text-xs text-gray-600 leading-relaxed">Mi donec risus commodo auctor phasellus adipiscing. Faucibus magna cursus sed sodales amet. Nunc.</p>
-                        </div>
-                    </div>
-                    <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Digital Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
-                            Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 2: Shirt Print -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                    <div class="space-y-6">
-                        <div class="w-14 h-14 bg-lightpurple text-primary rounded-2xl flex items-center justify-center text-xl shadow-inner">
-                            <i class="fa-solid fa-shirt"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-primary text-lg mb-2">Shirt Print</h3>
-                            <p class="text-xs text-gray-600 leading-relaxed">Mi donec risus commodo auctor phasellus adipiscing. Faucibus magna cursus sed sodales amet. Nunc.</p>
-                        </div>
-                    </div>
-                    <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Shirt Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
-                            Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 3: Photo Print -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                    <div class="space-y-6">
-                        <div class="w-14 h-14 bg-lightpurple text-primary rounded-2xl flex items-center justify-center text-xl shadow-inner">
-                            <i class="fa-solid fa-image"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-primary text-lg mb-2">Photo Print</h3>
-                            <p class="text-xs text-gray-600 leading-relaxed">Mi donec risus commodo auctor phasellus adipiscing. Faucibus magna cursus sed sodales amet. Nunc.</p>
-                        </div>
-                    </div>
-                    <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Photo Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
-                            Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 4: Stationery Print -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                    <div class="space-y-6">
-                        <div class="w-14 h-14 bg-lightpurple text-primary rounded-2xl flex items-center justify-center text-xl shadow-inner">
-                            <i class="fa-solid fa-newspaper"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-primary text-lg mb-2">Stationery Print</h3>
-                            <p class="text-xs text-gray-600 leading-relaxed">Mi donec risus commodo auctor phasellus adipiscing. Faucibus magna cursus sed sodales amet. Nunc.</p>
-                        </div>
-                    </div>
-                    <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Stationery Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
-                            Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 5: Document Print -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                    <div class="space-y-6">
-                        <div class="w-14 h-14 bg-lightpurple text-primary rounded-2xl flex items-center justify-center text-xl shadow-inner">
-                            <i class="fa-solid fa-file-lines"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-primary text-lg mb-2">Document Print</h3>
-                            <p class="text-xs text-gray-600 leading-relaxed">Mi donec risus commodo auctor phasellus adipiscing. Faucibus magna cursus sed sodales amet. Nunc.</p>
-                        </div>
-                    </div>
-                    <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Document Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
-                            Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 6: Packaging Print -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                    <div class="space-y-6">
-                        <div class="w-14 h-14 bg-lightpurple text-primary rounded-2xl flex items-center justify-center text-xl shadow-inner">
-                            <i class="fa-solid fa-box"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-primary text-lg mb-2">Packaging Print</h3>
-                            <p class="text-xs text-gray-600 leading-relaxed">Mi donec risus commodo auctor phasellus adipiscing. Faucibus magna cursus sed sodales amet. Nunc.</p>
-                        </div>
-                    </div>
-                    <div class="pt-6 mt-4 border-t border-gray-100">
-                        <button data-modal="Packaging Print"" class="text-primary font-bold text-xs hover:underline inline-flex items-center gap-2">
-                            Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. Statistics Banner (Dark background #212131) -->
-    <section class="bg-primary text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-4xl sm:text-5xl font-black text-lightpurple">22 +</div>
-                    <div class="text-xs uppercase tracking-wider mt-2 text-gray-300 font-medium">Years Experience</div>
-                </div>
-                <div>
-                    <div class="text-4xl sm:text-5xl font-black text-lightpurple">142 +</div>
-                    <div class="text-xs uppercase tracking-wider mt-2 text-gray-300 font-medium">Completed Projects</div>
-                </div>
-                <div>
-                    <div class="text-4xl sm:text-5xl font-black text-lightpurple">362 +</div>
-                    <div class="text-xs uppercase tracking-wider mt-2 text-gray-300 font-medium">Professional Team</div>
-                </div>
-                <div>
-                    <div class="text-4xl sm:text-5xl font-black text-lightpurple">99 %</div>
-                    <div class="text-xs uppercase tracking-wider mt-2 text-gray-300 font-medium">Satisfied Clients</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. Why Choose Us Section -->
-    <section id="pricing" class="py-20 bg-lightpurple/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Info & Items -->
-                <div class="lg:col-span-7 space-y-8">
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-secondary">WHY CHOOSE US</span>
-                        <h2 class="text-3xl sm:text-4xl font-black text-primary mt-1">Experience Excellence Service</h2>
-                        <p class="text-xs sm:text-sm text-gray-600 mt-3 leading-relaxed">
-                            Netus feugiat vitae enim enim in viverra. Id at sagittis cras pretium dictum nec netus. Ante dolor quis convallis.
-                        </p>
-                    </div>
-
-                    <div class="space-y-6">
-                        <!-- Item 1 -->
-                        <div class="flex items-start gap-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                            <div class="w-10 h-10 bg-lightpurple text-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-thumbs-up text-sm"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-primary text-base">Uncompromising Quality</h3>
-                                <p class="text-xs text-gray-500 mt-1 leading-relaxed">Netus feugiat vitae enim en vivema tot af sagittis cras prettur dictum nec netus. Ante duior quis convalla</p>
-                            </div>
-                        </div>
-
-                        <!-- Item 2 -->
-                        <div class="flex items-start gap-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                            <div class="w-10 h-10 bg-lightpurple text-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-layer-group text-sm"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-primary text-base">Extensive Range of Services</h3>
-                                <p class="text-xs text-gray-500 mt-1 leading-relaxed">Netus feugiat vitue enim et sagtttie pretiom dictum nec nerus Ante-dolor qule commells</p>
-                            </div>
-                        </div>
-
-                        <!-- Item 3 -->
-                        <div class="flex items-start gap-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                            <div class="w-10 h-10 bg-lightpurple text-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-user-check text-sm"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-primary text-base">Personalized Approach</h3>
-                                <p class="text-xs text-gray-500 mt-1 leading-relaxed">Netus feunat vitae enten mera vivens id iam sagittis cean pretuan rictum nec netus, Ante dotor que corivefis</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right "Our Process" Card -->
-                <div class="lg:col-span-5 bg-white p-6 rounded-3xl border border-gray-200/80 shadow-md">
-                    <div class="bg-gray-100 rounded-2xl h-96 relative overflow-hidden flex flex-col justify-between p-6">
-                        <!-- Play Button Header -->
-                        <div class="flex items-center gap-3 bg-white/90 backdrop-blur px-4 py-2 rounded-full w-fit shadow-sm">
-                            <div class="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-[10px]">
-                                <i class="fa-solid fa-play ml-0.5"></i>
-                            </div>
-                            <span class="font-bold text-primary text-xs">Our Process</span>
-                        </div>
-
-                        <!-- Inner Dark Graphic Box -->
-                        <div class="bg-secondary rounded-2xl flex-1 mt-6 flex items-center justify-center relative overflow-hidden shadow-inner">
-                            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
-                            <span class="text-xs font-bold text-white tracking-widest relative z-10">VIDEO OVERVIEW</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- 9. Testimonial Section -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Testimonial Card with Rating -->
-                <div class="lg:col-span-5 bg-white p-6 rounded-3xl border border-gray-200/80 shadow-md">
-                    <div class="bg-gray-100 rounded-2xl h-96 relative overflow-hidden flex flex-col justify-end p-6">
-                        <div class="absolute inset-0 bg-secondary/80 flex items-center justify-center">
-                            <span class="text-xs font-bold text-white tracking-widest">CLIENT PREVIEW</span>
-                        </div>
-                        <!-- Rating Badge on top -->
-                        <div class="relative z-10 bg-white/95 backdrop-blur px-5 py-3 rounded-2xl shadow-lg flex items-center justify-between">
-                            <div class="flex items-center gap-2">
-                                <span class="text-amber-500 text-sm">★★★★★</span>
-                                <span class="font-bold text-primary text-xs">4.4/5</span>
-                            </div>
-                            <div class="text-xs text-gray-500 font-medium">• 3,841 Reviews</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Testimonial Text & Carousel -->
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="flex items-center justify-between">
-                        <h2 class="text-3xl sm:text-4xl font-black text-primary">Testimonial</h2>
-                        <div class="text-secondary text-4xl font-serif">
-                            <i class="fa-solid fa-quote-right opacity-80"></i>
-                        </div>
-                    </div>
-
-                    <div class="space-y-4">
-                        <h3 class="font-bold text-primary text-lg">High-Quality Prints</h3>
-                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed italic">
-                            "The printing services provided by this company delivered high-quality prints that exceeded my expectations. The colors were vibrant, and the details were sharp. I highly recommend their services."
-                        </p>
-                        <div class="pt-2 font-bold text-xs text-primary">
-                            Emily Johnson <span class="text-gray-500 font-normal">, Graphic Designer</span>
-                        </div>
-                    </div>
-
-                    <!-- Carousel Dots -->
-                    <div class="flex items-center gap-3 pt-4">
-                        <div class="w-8 h-8 rounded-full bg-primary border-2 border-primary cursor-pointer shadow"></div>
-                        <div class="w-4 h-4 rounded-full bg-gray-300 hover:bg-secondary transition-all cursor-pointer"></div>
-                        <div class="w-4 h-4 rounded-full bg-gray-300 hover:bg-secondary transition-all cursor-pointer"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- 10. Newsletter Section (Dark background #212131) -->
-    <section class="bg-primary text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-6">
-                    <h3 class="text-2xl sm:text-3xl font-black tracking-tight">Join Our Newsletter to Keep Up To Date With Us!</h3>
-                </div>
-                <div class="lg:col-span-6">
-                    <form  class="flex flex-col sm:flex-row gap-3">
-                        <input type="email" id="newsletter-email" required placeholder="Enter your Email" class="flex-1 bg-white/10 border border-white/20 rounded-xl px-5 py-3.5 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-lightpurple">
-                        <button type="submit" class="bg-white hover:bg-lightpurple text-primary px-8 py-3.5 rounded-xl text-sm font-bold transition-all shadow">
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 11. Footer Section -->
-    <footer id="contact" class="bg-primary text-gray-300 py-16 text-xs border-t border-secondary">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-                <!-- Col 1: Logo & Description -->
-                <div class="space-y-4 md:col-span-1">
-                    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/10 w-fit">
-                        <div class="w-7 h-7 bg-lightpurple text-primary flex items-center justify-center rounded text-xs font-black">ING</div>
-                        <span class="text-white font-black tracking-wider text-sm">INKOGNITO</span>
-                    </div>
-                    <p class="text-gray-400 leading-relaxed">
-                        Nertus feugiat vitae mim enim in viverra id at sagittis cras pretium dictum nec netus Ante dolor Quts convallis
-                    </p>
-                </div>
-
-                <!-- Col 2: Company -->
-                <div class="space-y-3">
-                    <h4 class="text-white font-bold text-sm mb-4 tracking-wide">Company</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#about" class="hover:text-lightpurple transition-colors">About Us</a></li>
-                        <li><a href="#services" class="hover:text-lightpurple transition-colors">Services</a></li>
-                        <li><a href="#projects" class="hover:text-lightpurple transition-colors">Our Projects</a></li>
-                        <li><a href="#pricing" class="hover:text-lightpurple transition-colors">Pricing</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 3: Resources -->
-                <div class="space-y-3">
-                    <h4 class="text-white font-bold text-sm mb-4 tracking-wide">Resources</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-lightpurple transition-colors">Gift Cards</a></li>
-                        <li><a href="#" class="hover:text-lightpurple transition-colors">Design Tutorial</a></li>
-                        <li><a href="#" class="hover:text-lightpurple transition-colors">How to - Blog</a></li>
-                        <li><a href="#" class="hover:text-lightpurple transition-colors">Spotify Podcast</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 4: Help -->
-                <div class="space-y-3">
-                    <h4 class="text-white font-bold text-sm mb-4 tracking-wide">Help</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-lightpurple transition-colors">Customer Support</a></li>
-                        <li><a href="#" class="hover:text-lightpurple transition-colors">Delivery Details</a></li>
-                        <li><a href="#" class="hover:text-lightpurple transition-colors">Terms & Conditions</a></li>
-                        <li><a href="#" class="hover:text-lightpurple transition-colors">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Bottom Divider & Copyright -->
-            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-gray-400 gap-4">
-                <div>© 2026 INKognito. All rights reserved.</div>
-                <div>Designed by TokoTema</div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Interactive Modal -->
-    <div id="simple-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 opacity-0 pointer-events-none transition-all duration-300">
-        <div class="bg-white rounded-3xl p-8 max-w-sm w-full m-4 shadow-2xl space-y-4 border border-gray-200">
-            <h3 id="modal-title" class="font-bold text-primary text-xl">Action</h3>
-            <p class="text-xs text-gray-600 leading-relaxed">Configure your print requirements, upload your artwork file, or request a custom quotation.</p>
-            <button data-action="close-modal" class="w-full bg-primary text-white py-3 rounded-xl text-xs font-bold hover:bg-secondary transition-all">Close</button>
-        </div>
-    </div>
-    <!-- Python functionality lives in main.py -->
-    <script type="py" src="./main.py"></script>
-</body>
-</html>
